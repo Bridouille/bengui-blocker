@@ -3,7 +3,7 @@ var bengui = function () {
 	var self = this;
 
 	this.usernames = [ ];
-	this.posts = false;
+	this.posts = true;
 	this.comments = true;
 	this.timestep = 1000 * 1;
 	this.update = new updateOptions();
