@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Bengui-blocker",
+  "description": "This extension allow you to hide every bengui comment on facebook.",
+  "version": "1.0",
+
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+
+  "content_scripts" : [
+    {
+      "matches" : [ "https://www.facebook.com/*" ],
+      "js" : [ "js/jquery.min.js", "js/updateOptions.js", "js/bengui.js" ]
+    }
+  ],
+
+  "browser_action": {
+    "default_icon": "img/icon.png",
+    "default_popup": "popup.html"
+  }
+}
