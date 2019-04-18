@@ -12,7 +12,7 @@
 
   "content_scripts" : [
     {
-      "matches" : [ "https://www.facebook.com/*" ],
+      "matches" : [ "https://www.facebook.com/*", "https://www.messenger.com/*" ],
       "js" : [ "js/jquery.min.js", "js/updateOptions.js", "js/bengui.js" ]
     }
   ],

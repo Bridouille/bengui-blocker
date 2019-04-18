@@ -1,78 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>fb-hider</title>
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/popup.css">
-	</head>
-	<body>
-		<div class="container">
-			<div class="row">
-				<div class="col-xs-12">
-					<div class="page-header">
-					  <h3>Bengui-Blocker <br><small>Profitez enfin pleinement de facebook</small></h3>
-					</div>
+<head>
+	<meta charset="UTF-8">
+	<title>fb-hider</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/popup.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+				<div class="page-header">
+					<h3>Bengui-Blocker <br><small>Profitez enfin pleinement de facebook</small></h3>
 				</div>
-				
-				<div class="col-xs-12">
-					<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Options</h3>
-					  </div>
-					  <div class="panel-body">
+			</div>
 
-					  	<div class="col-xs-12">
-					  		<label for="post-enabled" class="block-title">Bloquer les posts :</label>
+			<div class="col-xs-12">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Options</h3>
+					</div>
+					<div class="panel-body">
+
+						<div class="col-xs-12">
+							<label for="post-enabled" class="block-title">Bloquer les posts :</label>
 							<div class="switch">
 								<div class="onoffswitch">
-								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="post-enabled" checked>
-								    <label class="onoffswitch-label" for="post-enabled">
-								        <span class="onoffswitch-inner"></span>
-								        <span class="onoffswitch-switch"></span>
-								    </label>
+									<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="post-enabled" checked>
+									<label class="onoffswitch-label" for="post-enabled">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
 								</div>
 							</div>
-					  	</div>
+						</div>
 						<div class="col-xs-12">
 							<label for="comment-enabled" class="block-title">Bloquer les commentaires :</label>
 							<div class="switch">
 								<div class="onoffswitch">
-								    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="comment-enabled" checked>
-								    <label class="onoffswitch-label" for="comment-enabled">
-								        <span class="onoffswitch-inner"></span>
-								        <span class="onoffswitch-switch"></span>
-								    </label>
+									<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="comment-enabled" checked>
+									<label class="onoffswitch-label" for="comment-enabled">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
 								</div>
 							</div>
 						</div>
-					  </div>
+						<div class="col-xs-12">
+							<label for="messenger-enabled" class="block-title">Bloquer dans messenger :</label>
+							<div class="switch">
+								<div class="onoffswitch">
+									<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="messenger-enabled" checked>
+									<label class="onoffswitch-label" for="messenger-enabled">
+										<span class="onoffswitch-inner"></span>
+										<span class="onoffswitch-switch"></span>
+									</label>
+								</div>
+							</div>
+						</div>
 					</div>
+				</div>
 
-					<div class="panel panel-default">
-					  <div class="panel-heading">
-					    <h3 class="panel-title">Personnes bloquées</h3>
-					  </div>
-					  <div class="panel-body">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">Personnes bloquées</h3>
+					</div>
+					<div class="panel-body">
 						<ul class="list-group" id="blocked-persons">
 							<!-- <li class="list-group-item">mbenguigui<span class="badge">X</span></li> -->
 						</ul>
-					  </div>
-					  <div class="panel-footer">
-					  	<div class="input-group">
-					  		<input type="text" class="form-control" id="username-add" aria-label="...">
-						  	<div class="input-group-btn">
-							  	<button class="btn btn-default" id="submit-add">Ajouter</button>
-						  	</div>
+					</div>
+					<div class="panel-footer">
+						<div class="input-group">
+							<input type="text" class="form-control" id="username-add" aria-label="...">
+							<div class="input-group-btn">
+								<button class="btn btn-default" id="submit-add">Ajouter</button>
+							</div>
 						</div>
-					  </div>
-					 </div>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	<script src="js/jquery.min.js"></script>
 	<script src="js/updateOptions.js"></script>
 	<script src="js/popup.js"></script>
-	</body>
+</body>
+
 </html>
