@@ -23,15 +23,6 @@ var bengui = function () {
         })
       }
     })
-    // for (i in messenger_list) {
-    // 	var conversation = messenger_list.get(i)
-    // 	console.log(Object.keys(conversation))
-
-    // 	const username = conversation.baseURI.
-    // 	if (self.usernames.includes(username)) {
-    // 		conversation.style.display = 'none'
-    // 	}
-    // }
   }
 
   this.removeComments = function () {
